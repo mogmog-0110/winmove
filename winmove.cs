@@ -131,7 +131,6 @@ public class WinMove : Form
             ListViewItem it = new ListViewItem(t);
             it.SubItems.Add(pname);
             it.SubItems.Add("Display " + mi + (scr.Primary ? " (main)" : (offscreen ? " (virtual)" : "")));
-            if (offscreen) it.ForeColor = Color.FromArgb(200, 110, 0);
             list.Items.Add(it);
             handles.Add(h);
             return true;
